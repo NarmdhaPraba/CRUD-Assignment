@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmacy Lanka (pvt) Limited</title>
+    <link rel="stylesheet" href="styles.css" >
+</head>
+<body>
+    <table>
+		<tr>
+			<td>
+				<form onsubmit="event.preventDefault();" autocomplete="off">
+					<div>
+						<label>Medical Name</label>
+						<input type="text" name="fullName">
+					</div>
+					<br>
+					<div>
+						<label>Batch No</label>
+						<input type="text" name="empCode">
+					</div>
+					<br>
+					<div>
+						<label>Price</label>
+						<input type="text" name="salary">
+					</div>
+					<br>
+					<div>
+						<label>Description</label>
+						<input type="text" name="city">
+					</div>
+					<br>
+					<div class="form-action-buttons">
+						<input type="ADD" value="ADD">
+					</div>
+				</form>
+				<br>
+			</td>
+			<td>
+				<table class="list" id="MedicalsList">
+					<thead>
+						<tr>
+							<th>Medical Name</th>
+							<th>EMP Code</th>
+							<th>Price</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+				</table>
+			</td>
+		</tr>
+	</table>
+	<script src="script.js"></script>	
+</body>
+</html>
